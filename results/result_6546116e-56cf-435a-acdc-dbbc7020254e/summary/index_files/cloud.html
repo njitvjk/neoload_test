@@ -1,0 +1,502 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Performance Testing Report</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="leaflet.css" rel="stylesheet">
+<script src="leaflet.js?2"></script>
+</head>
+<body>
+<div id="leftnavigation">
+<div class="divHeader">NeoLoad Test Report</div>
+<div class="menu_wrapper">
+<div class="item">
+<a href="./summary.html">Summary</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.resultssummary">Results summary</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.statisticssummary">Statistics Summary</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.hotspots">Hot spots</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.errors">Errors</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.alerts">Alerts</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.summary.all">General statistics</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.summary.transactions">Transaction statistics</a>
+</div>
+<div class="item">
+<a href="./settings.html">Execution context</a>
+</div>
+<div class="item">
+<a href="./servers.html">Servers</a>
+</div>
+<div class="item">
+<a href="./cloud.html">Cloud</a>
+</div>
+<div class="item">
+<a href="./populations.html">Populations</a>
+</div>
+<div class="item">
+<a href="./virtual-users.html">User Paths</a>
+</div>
+<div class="item">
+<a href="./transactions.html">Transactions</a>
+</div>
+<div class="item">
+<a href="./pages.html">Pages</a>
+</div>
+<div class="item">
+<a href="./medias.html">Media Contents</a>
+</div>
+<div class="item">
+<a href="./pushmessages.html">Push messages</a>
+</div>
+<div class="item">
+<a href="./monitors.html">Monitors</a>
+</div>
+<div class="item">
+<a href="./alerts.html">Alerts</a>
+</div>
+<div class="item">
+<a href="./sla-profiles-details.html">SLA per SLA Profile</a>
+</div>
+<div class="item">
+<a href="./sla-details-results-per-vu.html">SLA per User Path</a>
+</div>
+<div class="item">
+<a href="./scenario_WANImpact Local.html">Scenario</a>
+</div>
+<div class="title">Main graphs</div>
+<div class="item">
+<a href="./Main graphs_pages.average.html">Average page response time</a>
+</div>
+<div class="item">
+<a href="./Main graphs_requests.average.html">Average request response time</a>
+</div>
+<div class="item">
+<a href="./Main graphs_transactions.average.html">Average response time (Transactions)</a>
+</div>
+<div class="item">
+<a href="./Main graphs_hits.html">Requests per second</a>
+</div>
+<div class="item">
+<a href="./Main graphs_errors.html">Errors</a>
+</div>
+<div class="item">
+<a href="./Main graphs_throughput.html">Throughput</a>
+</div>
+<div class="item">
+<a href="./Main graphs_pages.average.vu.html">Response time against load</a>
+</div>
+<div class="item">
+<a href="./Main graphs_percentile.html">Distribution of Transaction Durations</a>
+</div>
+<div class="item">
+<a href="./Main graphs_alerts.html">Top 10 First Alerts</a>
+</div>
+</div>
+<div style="float: right;">
+<img style="margin-top: 10px; margin-bottom: 0px; margin-right: 4px" src="./images/logo_neotys.png"></div>
+</div>
+<div id="content">
+<div class="divHeader">Cloud</div>
+<div class="cloud_map_content_template hidden_by_default">
+<div style="width: 100%; height: 20px;" id="report.map">
+<div style="float:left" class="h1" id="statistics_summary_title">Map</div>
+</div>
+<div class="wrapper shared cloud_map_content_template" align="center">
+<div align="center">
+<table class="cloud_map_content_template">
+<tr>
+<td>
+<div id="map" style="height:600px;"></div>
+</td>
+</tr>
+</table>
+<textarea id="zone_@europe @france #28@paris#29" style="display:none">
+<div>
+<table style="width: 400px;" class="cloud_map_content2">
+<tr>
+<td><b>Zone</b></td><td>Europe France (Paris)</td>
+</tr>
+<tr>
+<td><b>Cloud Provider</b></td><td>SoftLayer</td>
+</tr>
+<tr>
+<td><b>Load Generators</b></td><td>1</td>
+</tr>
+<tr>
+<td><b>Total requests</b></td><td>17218 (13.9%)</td>
+</tr>
+<tr>
+<td><b>Average Page response time</b></td><td>2.67s (<span class="badPercentage">+7.18%</span>)
+                                    </td>
+</tr>
+<tr>
+<td><b>Error rate</b></td><td>0% (<span class="goodPercentage">-40.07%</span>)
+                                    </td>
+</tr>
+</table>
+<br>
+<table style="width: 400px;" class="cloud_map_content3">
+<tr>
+<td style="vertical-align: middle;"><img src="images/left.png" onclick="javascript:previousGraph('@europe @france #28@paris#29')"></td><td><img id="graph_@europe @france #28@paris#29" src="images/hits_zone_@europe @france %2328@paris%2329.png"></td><td style="vertical-align: middle;"><img src="images/right.png" onclick="javascript:nextGraph('@europe @france #28@paris#29')"></td>
+</tr>
+</table>
+</div>
+</textarea><textarea id="zone_@europe @france #28@strasbourg#29" style="display:none">
+<div>
+<table style="width: 400px;" class="cloud_map_content2">
+<tr>
+<td><b>Zone</b></td><td>Europe France (Strasbourg)</td>
+</tr>
+<tr>
+<td><b>Cloud Provider</b></td><td>RunAbove</td>
+</tr>
+<tr>
+<td><b>Load Generators</b></td><td>1</td>
+</tr>
+<tr>
+<td><b>Total requests</b></td><td>20272 (16.4%)</td>
+</tr>
+<tr>
+<td><b>Average Page response time</b></td><td>2.37s (<span class="goodPercentage">-5.02%</span>)
+                                    </td>
+</tr>
+<tr>
+<td><b>Error rate</b></td><td>0% (<span class="badPercentage">+35.7%</span>)
+                                    </td>
+</tr>
+</table>
+<br>
+<table style="width: 400px;" class="cloud_map_content3">
+<tr>
+<td style="vertical-align: middle;"><img src="images/left.png" onclick="javascript:previousGraph('@europe @france #28@strasbourg#29')"></td><td><img id="graph_@europe @france #28@strasbourg#29" src="images/hits_zone_@europe @france %2328@strasbourg%2329.png"></td><td style="vertical-align: middle;"><img src="images/right.png" onclick="javascript:nextGraph('@europe @france #28@strasbourg#29')"></td>
+</tr>
+</table>
+</div>
+</textarea><textarea id="zone_@europe @germany #28@frankfurt 1#29" style="display:none">
+<div>
+<table style="width: 400px;" class="cloud_map_content2">
+<tr>
+<td><b>Zone</b></td><td>Europe Germany (Frankfurt 1)</td>
+</tr>
+<tr>
+<td><b>Cloud Provider</b></td><td>Amazon Web Services</td>
+</tr>
+<tr>
+<td><b>Load Generators</b></td><td>1</td>
+</tr>
+<tr>
+<td><b>Total requests</b></td><td>16467 (13.3%)</td>
+</tr>
+<tr>
+<td><b>Average Page response time</b></td><td>2.42s (<span class="goodPercentage">-2.81%</span>)
+                                    </td>
+</tr>
+<tr>
+<td><b>Error rate</b></td><td>0% (<span class="badPercentage">+25.3%</span>)
+                                    </td>
+</tr>
+</table>
+<br>
+<table style="width: 400px;" class="cloud_map_content3">
+<tr>
+<td style="vertical-align: middle;"><img src="images/left.png" onclick="javascript:previousGraph('@europe @germany #28@frankfurt 1#29')"></td><td><img id="graph_@europe @germany #28@frankfurt 1#29" src="images/hits_zone_@europe @germany %2328@frankfurt 1%2329.png"></td><td style="vertical-align: middle;"><img src="images/right.png" onclick="javascript:nextGraph('@europe @germany #28@frankfurt 1#29')"></td>
+</tr>
+</table>
+</div>
+</textarea><textarea id="zone_@europe @ireland #28@dublin 1#29" style="display:none">
+<div>
+<table style="width: 400px;" class="cloud_map_content2">
+<tr>
+<td><b>Zone</b></td><td>Europe Ireland (Dublin 1)</td>
+</tr>
+<tr>
+<td><b>Cloud Provider</b></td><td>Amazon Web Services</td>
+</tr>
+<tr>
+<td><b>Load Generators</b></td><td>1</td>
+</tr>
+<tr>
+<td><b>Total requests</b></td><td>20075 (16.2%)</td>
+</tr>
+<tr>
+<td><b>Average Page response time</b></td><td>2.4s (<span class="goodPercentage">-3.69%</span>)
+                                    </td>
+</tr>
+<tr>
+<td><b>Error rate</b></td><td>0% (<span class="badPercentage">+19.9%</span>)
+                                    </td>
+</tr>
+</table>
+<br>
+<table style="width: 400px;" class="cloud_map_content3">
+<tr>
+<td style="vertical-align: middle;"><img src="images/left.png" onclick="javascript:previousGraph('@europe @ireland #28@dublin 1#29')"></td><td><img id="graph_@europe @ireland #28@dublin 1#29" src="images/hits_zone_@europe @ireland %2328@dublin 1%2329.png"></td><td style="vertical-align: middle;"><img src="images/right.png" onclick="javascript:nextGraph('@europe @ireland #28@dublin 1#29')"></td>
+</tr>
+</table>
+</div>
+</textarea><textarea id="zone_@europe @italy #28@milan#29" style="display:none">
+<div>
+<table style="width: 400px;" class="cloud_map_content2">
+<tr>
+<td><b>Zone</b></td><td>Europe Italy (Milan)</td>
+</tr>
+<tr>
+<td><b>Cloud Provider</b></td><td>SoftLayer</td>
+</tr>
+<tr>
+<td><b>Load Generators</b></td><td>1</td>
+</tr>
+<tr>
+<td><b>Total requests</b></td><td>16720 (13.5%)</td>
+</tr>
+<tr>
+<td><b>Average Page response time</b></td><td>2.8s (<span class="badPercentage">+12.5%</span>)
+                                    </td>
+</tr>
+<tr>
+<td><b>Error rate</b></td><td>0% (<span class="badPercentage">+64.6%</span>)
+                                    </td>
+</tr>
+</table>
+<br>
+<table style="width: 400px;" class="cloud_map_content3">
+<tr>
+<td style="vertical-align: middle;"><img src="images/left.png" onclick="javascript:previousGraph('@europe @italy #28@milan#29')"></td><td><img id="graph_@europe @italy #28@milan#29" src="images/hits_zone_@europe @italy %2328@milan%2329.png"></td><td style="vertical-align: middle;"><img src="images/right.png" onclick="javascript:nextGraph('@europe @italy #28@milan#29')"></td>
+</tr>
+</table>
+</div>
+</textarea><textarea id="zone_@europe @netherlands #28@amsterdam 2#29" style="display:none">
+<div>
+<table style="width: 400px;" class="cloud_map_content2">
+<tr>
+<td><b>Zone</b></td><td>Europe Netherlands (Amsterdam 2)</td>
+</tr>
+<tr>
+<td><b>Cloud Provider</b></td><td>Microsoft Azure</td>
+</tr>
+<tr>
+<td><b>Load Generators</b></td><td>1</td>
+</tr>
+<tr>
+<td><b>Total requests</b></td><td>16297 (13.2%)</td>
+</tr>
+<tr>
+<td><b>Average Page response time</b></td><td>2.47s (<span class="goodPercentage">-0.923%</span>)
+                                    </td>
+</tr>
+<tr>
+<td><b>Error rate</b></td><td>0% (<span class="goodPercentage">-78.89%</span>)
+                                    </td>
+</tr>
+</table>
+<br>
+<table style="width: 400px;" class="cloud_map_content3">
+<tr>
+<td style="vertical-align: middle;"><img src="images/left.png" onclick="javascript:previousGraph('@europe @netherlands #28@amsterdam 2#29')"></td><td><img id="graph_@europe @netherlands #28@amsterdam 2#29" src="images/hits_zone_@europe @netherlands %2328@amsterdam 2%2329.png"></td><td style="vertical-align: middle;"><img src="images/right.png" onclick="javascript:nextGraph('@europe @netherlands #28@amsterdam 2#29')"></td>
+</tr>
+</table>
+</div>
+</textarea><textarea id="zone_@europe @united @kingdom #28@london 1#29" style="display:none">
+<div>
+<table style="width: 400px;" class="cloud_map_content2">
+<tr>
+<td><b>Zone</b></td><td>Europe United Kingdom (London 1)</td>
+</tr>
+<tr>
+<td><b>Cloud Provider</b></td><td>Rackspace</td>
+</tr>
+<tr>
+<td><b>Load Generators</b></td><td>1</td>
+</tr>
+<tr>
+<td><b>Total requests</b></td><td>16782 (13.6%)</td>
+</tr>
+<tr>
+<td><b>Average Page response time</b></td><td>2.35s (<span class="goodPercentage">-5.9%</span>)
+                                    </td>
+</tr>
+<tr>
+<td><b>Error rate</b></td><td>0% (<span class="goodPercentage">-38.51%</span>)
+                                    </td>
+</tr>
+</table>
+<br>
+<table style="width: 400px;" class="cloud_map_content3">
+<tr>
+<td style="vertical-align: middle;"><img src="images/left.png" onclick="javascript:previousGraph('@europe @united @kingdom #28@london 1#29')"></td><td><img id="graph_@europe @united @kingdom #28@london 1#29" src="images/hits_zone_@europe @united @kingdom %2328@london 1%2329.png"></td><td style="vertical-align: middle;"><img src="images/right.png" onclick="javascript:nextGraph('@europe @united @kingdom #28@london 1#29')"></td>
+</tr>
+</table>
+</div>
+</textarea><script type="text/javascript">
+            	/* BEGIN - unhide the cloud map. it won't appear when javascript is not supported because it requires javascript to function. */
+				var hiddenByDefaultElements = document.getElementsByClassName('hidden_by_default');
+				for (var i = 0; i < hiddenByDefaultElements.length; i++) {
+				    hiddenByDefaultElements[i].style.display = 'inline';
+				}
+            	/* END - unhide the cloud map */
+            
+                var map = L.map('map', {minZoom:1, maxZoom:6, closePopupOnClick:false}).setView([49.445655, 1.3805369999999995], 5);
+                L.tileLayer('http://maps.neotys.com/oo_{x}_{y}_{z}.png', {attribution: '© <a href="http://www.openstreetmap.org/">OpenStreetMap</a> contributors'}).addTo(map);
+                
+                var colors = ["red", "black", "green"];
+                var zoneIcons = new Object();
+                
+                for(var i=0;i<colors.length;i++) {
+                    zoneIcons[colors[i]] = new Object();
+                    var sizes = [16, 24, 32, 42, 48];
+                    for(var sizeIndex=0; sizeIndex<sizes.length; sizeIndex++ ) {
+                        var size = sizes[sizeIndex];
+                        console.log("images/localisation_pin_" + size + "_" + colors[i] + ".png");
+                        zoneIcons[colors[i]][size] = L.icon({
+                            iconUrl:    "images/localisation_pin_" + size + "_" + colors[i] + ".png",
+                            iconAnchor: [size/2+1, size]
+                        });
+                    }
+                }
+                
+                var graphsIndexes = new Object();
+                var zoneGraphs = new Object();
+                
+                        L.marker([48.856614, 2.352222], {icon: zoneIcons["black"][32]}).addTo(map).bindPopup(L.popup({maxWidth:600}).setLatLng([48.856614, 2.352222]).setContent(document.getElementById('zone_@europe @france #28@paris#29').value), {offset: [0, 0]});
+                        graphsIndexes["@europe @france #28@paris#29"] = 0;
+                        zoneGraphs["@europe @france #28@paris#29"] = ["images/hits_zone_@europe @france %2328@paris%2329.png", "images/load_zone_@europe @france %2328@paris%2329.png"];
+                    
+                        L.marker([48.58476, 7.750576], {icon: zoneIcons["black"][32]}).addTo(map).bindPopup(L.popup({maxWidth:600}).setLatLng([48.58476, 7.750576]).setContent(document.getElementById('zone_@europe @france #28@strasbourg#29').value), {offset: [0, 0]});
+                        graphsIndexes["@europe @france #28@strasbourg#29"] = 0;
+                        zoneGraphs["@europe @france #28@strasbourg#29"] = ["images/hits_zone_@europe @france %2328@strasbourg%2329.png", "images/load_zone_@europe @france %2328@strasbourg%2329.png"];
+                    
+                        L.marker([50.117, 8.683], {icon: zoneIcons["black"][32]}).addTo(map).bindPopup(L.popup({maxWidth:600}).setLatLng([50.117, 8.683]).setContent(document.getElementById('zone_@europe @germany #28@frankfurt 1#29').value), {offset: [0, 0]});
+                        graphsIndexes["@europe @germany #28@frankfurt 1#29"] = 0;
+                        zoneGraphs["@europe @germany #28@frankfurt 1#29"] = ["images/hits_zone_@europe @germany %2328@frankfurt 1%2329.png", "images/load_zone_@europe @germany %2328@frankfurt 1%2329.png"];
+                    
+                        L.marker([53.420795, -6.418207], {icon: zoneIcons["black"][32]}).addTo(map).bindPopup(L.popup({maxWidth:600}).setLatLng([53.420795, -6.418207]).setContent(document.getElementById('zone_@europe @ireland #28@dublin 1#29').value), {offset: [0, 0]});
+                        graphsIndexes["@europe @ireland #28@dublin 1#29"] = 0;
+                        zoneGraphs["@europe @ireland #28@dublin 1#29"] = ["images/hits_zone_@europe @ireland %2328@dublin 1%2329.png", "images/load_zone_@europe @ireland %2328@dublin 1%2329.png"];
+                    
+                        L.marker([45.470515, 9.179281], {icon: zoneIcons["red"][32]}).addTo(map).bindPopup(L.popup({maxWidth:600}).setLatLng([45.470515, 9.179281]).setContent(document.getElementById('zone_@europe @italy #28@milan#29').value), {offset: [0, 0]});
+                        graphsIndexes["@europe @italy #28@milan#29"] = 0;
+                        zoneGraphs["@europe @italy #28@milan#29"] = ["images/hits_zone_@europe @italy %2328@milan%2329.png", "images/load_zone_@europe @italy %2328@milan%2329.png"];
+                    
+                        L.marker([52.352437, 5.005213], {icon: zoneIcons["green"][32]}).addTo(map).bindPopup(L.popup({maxWidth:600}).setLatLng([52.352437, 5.005213]).setContent(document.getElementById('zone_@europe @netherlands #28@amsterdam 2#29').value), {offset: [0, 0]});
+                        graphsIndexes["@europe @netherlands #28@amsterdam 2#29"] = 0;
+                        zoneGraphs["@europe @netherlands #28@amsterdam 2#29"] = ["images/hits_zone_@europe @netherlands %2328@amsterdam 2%2329.png", "images/load_zone_@europe @netherlands %2328@amsterdam 2%2329.png"];
+                    
+                        L.marker([51.50853, -0.12574], {icon: zoneIcons["green"][32]}).addTo(map).bindPopup(L.popup({maxWidth:600}).setLatLng([51.50853, -0.12574]).setContent(document.getElementById('zone_@europe @united @kingdom #28@london 1#29').value), {offset: [0, 0]});
+                        graphsIndexes["@europe @united @kingdom #28@london 1#29"] = 0;
+                        zoneGraphs["@europe @united @kingdom #28@london 1#29"] = ["images/hits_zone_@europe @united @kingdom %2328@london 1%2329.png", "images/load_zone_@europe @united @kingdom %2328@london 1%2329.png"];
+                    
+                
+                
+                
+                function nextGraph(zoneName) {
+                    graphsIndexes[zoneName]++;
+                    if(graphsIndexes[zoneName]>=zoneGraphs[zoneName].length) {
+                        graphsIndexes[zoneName]=0;
+                    }
+                    updateZoneGraph(zoneName);
+                }
+                
+                function previousGraph(zoneName) {
+                    graphsIndexes[zoneName]--;
+                    if(graphsIndexes[zoneName]<0) {
+                        graphsIndexes[zoneName]=zoneGraphs[zoneName].length-1;
+                    }
+                    updateZoneGraph(zoneName);
+                }
+                
+                function updateZoneGraph(zoneName) {
+                    document.getElementById("graph_" + zoneName).src = zoneGraphs[zoneName][graphsIndexes[zoneName]];
+                    console.log(zoneGraphs[zoneName][graphsIndexes[zoneName]]);
+                }
+            </script>
+<br>
+</div>
+</div>
+</div>
+<div style="width: 100%; height: 20px;" id="report.graphs">
+<div style="float:left" class="h1" id="statistics_summary_title">Graphs</div>
+</div>
+<div class="wrapper shared" align="center">
+<div align="center">
+<div align="center" class="graph_predefined" style="margin-top: 5px">
+<img src="images/avgDurationZones.png" alt="summary"></div>
+<div align="center" class="graph_predefined" style="margin-top: 5px">
+<img src="images/errorsZones.png" alt="summary"></div>
+</div>
+</div>
+<div style="width: 100%; height: 20px;" id="report.statistics">
+<div style="float:left" class="h1" id="statistics_summary_title">Statistics</div>
+</div>
+<div class="wrapper shared" align="center">
+<div align="center">
+<table class="zones_table_content_template">
+<tr>
+<th>Zone</th><th>Cloud Provider</th><th>Load Generators</th><th>Total requests</th><th>Average requests/s</th><th>Avg. Page res. time</th><th>Error rate</th>
+</tr>
+<tr>
+<td class="line2left">Europe France (Paris)</td><td class="line2left">SoftLayer</td><td class="line2left">1</td><td class="line2left">17218 (13.9%)
+        </td><td class="line2left">17.9</td><td class="line2left">2.67s (<span class="badPercentage">+7.18%</span>)
+        </td><td class="line2left">0% (<span class="goodPercentage">-40.07%</span>)
+        </td>
+</tr>
+<tr>
+<td class="line1left">Europe France (Strasbourg)</td><td class="line1left">RunAbove</td><td class="line1left">1</td><td class="line1left">20272 (16.4%)
+        </td><td class="line1left">21.1</td><td class="line1left">2.37s (<span class="goodPercentage">-5.02%</span>)
+        </td><td class="line1left">0% (<span class="badPercentage">+35.7%</span>)
+        </td>
+</tr>
+<tr>
+<td class="line2left">Europe Germany (Frankfurt 1)</td><td class="line2left">Amazon Web Services</td><td class="line2left">1</td><td class="line2left">16467 (13.3%)
+        </td><td class="line2left">17.2</td><td class="line2left">2.42s (<span class="goodPercentage">-2.81%</span>)
+        </td><td class="line2left">0% (<span class="badPercentage">+25.3%</span>)
+        </td>
+</tr>
+<tr>
+<td class="line1left">Europe Ireland (Dublin 1)</td><td class="line1left">Amazon Web Services</td><td class="line1left">1</td><td class="line1left">20075 (16.2%)
+        </td><td class="line1left">20.9</td><td class="line1left">2.4s (<span class="goodPercentage">-3.69%</span>)
+        </td><td class="line1left">0% (<span class="badPercentage">+19.9%</span>)
+        </td>
+</tr>
+<tr>
+<td class="line2left">Europe Italy (Milan)</td><td class="line2left">SoftLayer</td><td class="line2left">1</td><td class="line2left">16720 (13.5%)
+        </td><td class="line2left">17.4</td><td class="line2left">2.8s (<span class="badPercentage">+12.5%</span>)
+        </td><td class="line2left">0% (<span class="badPercentage">+64.6%</span>)
+        </td>
+</tr>
+<tr>
+<td class="line1left">Europe Netherlands (Amsterdam 2)</td><td class="line1left">Microsoft Azure</td><td class="line1left">1</td><td class="line1left">16297 (13.2%)
+        </td><td class="line1left">17.0</td><td class="line1left">2.47s (<span class="goodPercentage">-0.923%</span>)
+        </td><td class="line1left">0% (<span class="goodPercentage">-78.89%</span>)
+        </td>
+</tr>
+<tr>
+<td class="line2left">Europe United Kingdom (London 1)</td><td class="line2left">Rackspace</td><td class="line2left">1</td><td class="line2left">16782 (13.6%)
+        </td><td class="line2left">17.5</td><td class="line2left">2.35s (<span class="goodPercentage">-5.9%</span>)
+        </td><td class="line2left">0% (<span class="goodPercentage">-38.51%</span>)
+        </td>
+</tr>
+<tr>
+<td class="line1left">Global</td><td class="line1left"></td><td class="line1left">7</td><td class="line1left">123831 (100%)
+        </td><td class="line1left">129.0</td><td class="line1left">2.49s
+        </td><td class="line1left">0%
+        </td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

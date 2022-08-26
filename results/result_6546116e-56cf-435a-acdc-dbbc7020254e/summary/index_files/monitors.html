@@ -1,0 +1,729 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Performance Testing Report</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="leftnavigation">
+<div class="divHeader">NeoLoad Test Report</div>
+<div class="menu_wrapper">
+<div class="item">
+<a href="./summary.html">Summary</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.resultssummary">Results summary</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.statisticssummary">Statistics Summary</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.hotspots">Hot spots</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.errors">Errors</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.alerts">Alerts</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.summary.all">General statistics</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.summary.transactions">Transaction statistics</a>
+</div>
+<div class="item">
+<a href="./settings.html">Execution context</a>
+</div>
+<div class="item">
+<a href="./servers.html">Servers</a>
+</div>
+<div class="item">
+<a href="./cloud.html">Cloud</a>
+</div>
+<div class="item">
+<a href="./populations.html">Populations</a>
+</div>
+<div class="item">
+<a href="./virtual-users.html">User Paths</a>
+</div>
+<div class="item">
+<a href="./transactions.html">Transactions</a>
+</div>
+<div class="item">
+<a href="./pages.html">Pages</a>
+</div>
+<div class="item">
+<a href="./medias.html">Media Contents</a>
+</div>
+<div class="item">
+<a href="./pushmessages.html">Push messages</a>
+</div>
+<div class="item">
+<a href="./monitors.html">Monitors</a>
+</div>
+<div class="item">
+<a href="./alerts.html">Alerts</a>
+</div>
+<div class="item">
+<a href="./sla-profiles-details.html">SLA per SLA Profile</a>
+</div>
+<div class="item">
+<a href="./sla-details-results-per-vu.html">SLA per User Path</a>
+</div>
+<div class="item">
+<a href="./scenario_WANImpact Local.html">Scenario</a>
+</div>
+<div class="title">Main graphs</div>
+<div class="item">
+<a href="./Main graphs_pages.average.html">Average page response time</a>
+</div>
+<div class="item">
+<a href="./Main graphs_requests.average.html">Average request response time</a>
+</div>
+<div class="item">
+<a href="./Main graphs_transactions.average.html">Average response time (Transactions)</a>
+</div>
+<div class="item">
+<a href="./Main graphs_hits.html">Requests per second</a>
+</div>
+<div class="item">
+<a href="./Main graphs_errors.html">Errors</a>
+</div>
+<div class="item">
+<a href="./Main graphs_throughput.html">Throughput</a>
+</div>
+<div class="item">
+<a href="./Main graphs_pages.average.vu.html">Response time against load</a>
+</div>
+<div class="item">
+<a href="./Main graphs_percentile.html">Distribution of Transaction Durations</a>
+</div>
+<div class="item">
+<a href="./Main graphs_alerts.html">Top 10 First Alerts</a>
+</div>
+</div>
+<div style="float: right;">
+<img style="margin-top: 10px; margin-bottom: 0px; margin-right: 4px" src="./images/logo_neotys.png"></div>
+</div>
+<div id="content">
+<div class="divHeader">Monitors</div>
+<p class="mediumtitle">Controller</p>
+<div style="width: 100%; height: 20px;" id="report.monitors">
+<div style="float:left" class="h1" id="statistics_summary_title">Performance Counters</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="monitors_template">
+<th width="36%"></th><th width="5%">Min</th><th width="5%">Avg</th><th width="5%">Max</th><th width="5%">Med</th><th width="5%">Avg-90%</th><th width="5%">Std Dev</th>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">177.3</td><td class="line2right bordered">228</td><td class="line2right bordered">180</td><td class="line2right bordered">180.8</td><td class="line2right bordered">43.3</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Throughput</span></td><td class="line1right bordered">0</td><td class="line1right bordered">16.1</td><td class="line1right bordered">59.3</td><td class="line1right bordered">14.8</td><td class="line1right bordered">15.5</td><td class="line1right bordered">11.3</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Alerts</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Critical Alerts</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Warning Alerts</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/CPU Load</span></td><td class="line1right bordered">5</td><td class="line1right bordered">13.9</td><td class="line1right bordered">39</td><td class="line1right bordered">13</td><td class="line1right bordered">13.5</td><td class="line1right bordered">4.7</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Memory Used</span></td><td class="line2right bordered">9</td><td class="line2right bordered">24.1</td><td class="line2right bordered">48</td><td class="line2right bordered">23</td><td class="line2right bordered">23.7</td><td class="line2right bordered">9.91</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Thread Count</span></td><td class="line1right bordered">404</td><td class="line1right bordered">430.4</td><td class="line1right bordered">449</td><td class="line1right bordered">429</td><td class="line1right bordered">429.9</td><td class="line1right bordered">3.62</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Network/Segments sent/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">245.4</td><td class="line2right bordered">10,060</td><td class="line2right bordered">183.8</td><td class="line2right bordered">208.5</td><td class="line2right bordered">367.6</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Network/Segments retransmitted/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">2.93</td><td class="line1right bordered">123.2</td><td class="line1right bordered">0</td><td class="line1right bordered">1.25</td><td class="line1right bordered">9.66</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Network/net7 (Microsoft Virtual WiFi Miniport Adapter)/Megabits received/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Network/net7 (Microsoft Virtual WiFi Miniport Adapter)/Megabits sent/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Network/eth20 (PdaNet Broadband Adapter)/Megabits received/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Network/eth20 (PdaNet Broadband Adapter)/Megabits sent/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Network/eth4 (P&eacute;riph&eacute;rique Bluetooth (r&eacute;seau personnel))/Megabits received/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Network/eth4 (P&eacute;riph&eacute;rique Bluetooth (r&eacute;seau personnel))/Megabits sent/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Network/net5 (Intel(R) Centrino(R) Advanced-N 6205)/Megabits received/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0.024</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0.002</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Network/net5 (Intel(R) Centrino(R) Advanced-N 6205)/Megabits sent/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0.029</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0.001</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Network/net8 (Microsoft Virtual WiFi Miniport Adapter #2)/Megabits received/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Network/net8 (Microsoft Virtual WiFi Miniport Adapter #2)/Megabits sent/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Network/eth3 (Intel(R) 82579LM Gigabit Network Connection)/Megabits received/sec.</span></td><td class="line2right bordered">0.02</td><td class="line2right bordered">0.901</td><td class="line2right bordered">19.7</td><td class="line2right bordered">0.509</td><td class="line2right bordered">0.594</td><td class="line2right bordered">2.05</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Network/eth3 (Intel(R) 82579LM Gigabit Network Connection)/Megabits sent/sec.</span></td><td class="line1right bordered">0.014</td><td class="line1right bordered">0.122</td><td class="line1right bordered">8.56</td><td class="line1right bordered">0.049</td><td class="line1right bordered">0.069</td><td class="line1right bordered">0.485</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Default zone/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Europe Germany (Frankfurt 1)/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">21.7</td><td class="line1right bordered">28</td><td class="line1right bordered">22</td><td class="line1right bordered">22.1</td><td class="line1right bordered">5.36</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Europe Italy (Milan)/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">22.6</td><td class="line2right bordered">29</td><td class="line2right bordered">23</td><td class="line2right bordered">23.1</td><td class="line2right bordered">5.48</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Europe Ireland (Dublin 1)/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">22.6</td><td class="line1right bordered">29</td><td class="line1right bordered">23</td><td class="line1right bordered">23.1</td><td class="line1right bordered">5.48</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Europe United Kingdom (London 1)/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">21.7</td><td class="line2right bordered">28</td><td class="line2right bordered">22</td><td class="line2right bordered">22.1</td><td class="line2right bordered">5.36</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Europe Netherlands (Amsterdam 2)/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">21.7</td><td class="line1right bordered">28</td><td class="line1right bordered">22</td><td class="line1right bordered">22.1</td><td class="line1right bordered">5.35</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Europe Belgium/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">21.7</td><td class="line2right bordered">28</td><td class="line2right bordered">22</td><td class="line2right bordered">22.1</td><td class="line2right bordered">5.35</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Europe France (Strasbourg)/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">22.6</td><td class="line1right bordered">29</td><td class="line1right bordered">23</td><td class="line1right bordered">23.1</td><td class="line1right bordered">5.47</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Europe France (Paris)/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">22.6</td><td class="line2right bordered">29</td><td class="line2right bordered">23</td><td class="line2right bordered">23.1</td><td class="line2right bordered">5.48</td>
+</tr>
+</table>
+</div>
+</div>
+<p class="mediumtitle">SampleServerNode01/http-apache<span class="mediumtitle-label"> monitored from </span>localhost</p>
+<div style="width: 100%; height: 20px;" id="report.monitors">
+<div style="float:left" class="h1" id="statistics_summary_title">Performance Counters</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="monitors_template">
+<th width="36%"></th><th width="5%">Min</th><th width="5%">Avg</th><th width="5%">Max</th><th width="5%">Med</th><th width="5%">Avg-90%</th><th width="5%">Std Dev</th>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">SampleServerNode01/http-apache/All/Total Accesses</span></td><td class="line2right bordered">228,547</td><td class="line2right bordered">257,448</td><td class="line2right bordered">290,479</td><td class="line2right bordered">256,933</td><td class="line2right bordered">257,106</td><td class="line2right bordered">18,477</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">SampleServerNode01/http-apache/All/Total kBytes</span></td><td class="line1right bordered">3,784,578</td><td class="line1right bordered">4,264,198</td><td class="line1right bordered">4,805,767</td><td class="line1right bordered">4,262,055</td><td class="line1right bordered">4,259,085</td><td class="line1right bordered">300,194</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">SampleServerNode01/http-apache/All/Uptime</span></td><td class="line2right bordered">196,385</td><td class="line2right bordered">196,859</td><td class="line2right bordered">197,344</td><td class="line2right bordered">196,860</td><td class="line2right bordered">196,856</td><td class="line2right bordered">279.3</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">SampleServerNode01/http-apache/All/ReqPerSec</span></td><td class="line1right bordered">1.16</td><td class="line1right bordered">1.31</td><td class="line1right bordered">1.47</td><td class="line1right bordered">1.31</td><td class="line1right bordered">1.31</td><td class="line1right bordered">0.092</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">SampleServerNode01/http-apache/All/BytesPerSec</span></td><td class="line2right bordered">19,734</td><td class="line2right bordered">22,179</td><td class="line2right bordered">24,937</td><td class="line2right bordered">22,170</td><td class="line2right bordered">22,153</td><td class="line2right bordered">1,530</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">SampleServerNode01/http-apache/All/BytesPerReq</span></td><td class="line1right bordered">16,900</td><td class="line1right bordered">16,963</td><td class="line1right bordered">17,014</td><td class="line1right bordered">16,970</td><td class="line1right bordered">16,963</td><td class="line1right bordered">26.3</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">SampleServerNode01/http-apache/All/BusyWorkers</span></td><td class="line2right bordered">1</td><td class="line2right bordered">5.24</td><td class="line2right bordered">11</td><td class="line2right bordered">6</td><td class="line2right bordered">5.2</td><td class="line2right bordered">2.59</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">SampleServerNode01/http-apache/All/%BusyWorkers</span></td><td class="line1right bordered">10</td><td class="line1right bordered">82.1</td><td class="line1right bordered">100</td><td class="line1right bordered">100</td><td class="line1right bordered">84.5</td><td class="line1right bordered">29.6</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">SampleServerNode01/http-apache/All/IdleWorkers</span></td><td class="line2right bordered">0</td><td class="line2right bordered">1.33</td><td class="line2right bordered">9</td><td class="line2right bordered">0</td><td class="line2right bordered">1.06</td><td class="line2right bordered">2.28</td>
+</tr>
+</table>
+</div>
+</div>
+<p class="mediumtitle">SampleServerNode02/http-apache<span class="mediumtitle-label"> monitored from </span>localhost</p>
+<div style="width: 100%; height: 20px;" id="report.monitors">
+<div style="float:left" class="h1" id="statistics_summary_title">Performance Counters</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="monitors_template">
+<th width="36%"></th><th width="5%">Min</th><th width="5%">Avg</th><th width="5%">Max</th><th width="5%">Med</th><th width="5%">Avg-90%</th><th width="5%">Std Dev</th>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">SampleServerNode02/http-apache/All/Total Accesses</span></td><td class="line2right bordered">229,559</td><td class="line2right bordered">258,580</td><td class="line2right bordered">291,674</td><td class="line2right bordered">258,072</td><td class="line2right bordered">258,241</td><td class="line2right bordered">18,483</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">SampleServerNode02/http-apache/All/Total kBytes</span></td><td class="line1right bordered">3,803,070</td><td class="line1right bordered">4,283,618</td><td class="line1right bordered">4,826,113</td><td class="line1right bordered">4,278,696</td><td class="line1right bordered">4,278,481</td><td class="line1right bordered">299,845</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">SampleServerNode02/http-apache/All/Uptime</span></td><td class="line2right bordered">196,347</td><td class="line2right bordered">196,821</td><td class="line2right bordered">197,306</td><td class="line2right bordered">196,819</td><td class="line2right bordered">196,818</td><td class="line2right bordered">278.6</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">SampleServerNode02/http-apache/All/ReqPerSec</span></td><td class="line1right bordered">1.17</td><td class="line1right bordered">1.31</td><td class="line1right bordered">1.48</td><td class="line1right bordered">1.31</td><td class="line1right bordered">1.31</td><td class="line1right bordered">0.092</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">SampleServerNode02/http-apache/All/BytesPerSec</span></td><td class="line2right bordered">19,834</td><td class="line2right bordered">22,284</td><td class="line2right bordered">25,047</td><td class="line2right bordered">22,261</td><td class="line2right bordered">22,258</td><td class="line2right bordered">1,528</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">SampleServerNode02/http-apache/All/BytesPerReq</span></td><td class="line1right bordered">16,906</td><td class="line1right bordered">16,965</td><td class="line1right bordered">17,017</td><td class="line1right bordered">16,968</td><td class="line1right bordered">16,966</td><td class="line1right bordered">27.7</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">SampleServerNode02/http-apache/All/BusyWorkers</span></td><td class="line2right bordered">1</td><td class="line2right bordered">5.88</td><td class="line2right bordered">12</td><td class="line2right bordered">6.5</td><td class="line2right bordered">5.83</td><td class="line2right bordered">2.74</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">SampleServerNode02/http-apache/All/%BusyWorkers</span></td><td class="line1right bordered">10</td><td class="line1right bordered">85</td><td class="line1right bordered">100</td><td class="line1right bordered">100</td><td class="line1right bordered">87.7</td><td class="line1right bordered">28.1</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">SampleServerNode02/http-apache/All/IdleWorkers</span></td><td class="line2right bordered">0</td><td class="line2right bordered">1.15</td><td class="line2right bordered">9</td><td class="line2right bordered">0</td><td class="line2right bordered">0.876</td><td class="line2right bordered">2.23</td>
+</tr>
+</table>
+</div>
+</div>
+<p class="mediumtitle">LG 146.148.19.39</p>
+<div style="width: 100%; height: 20px;" id="report.monitors">
+<div style="float:left" class="h1" id="statistics_summary_title">Performance Counters</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="monitors_template">
+<th width="36%"></th><th width="5%">Min</th><th width="5%">Avg</th><th width="5%">Max</th><th width="5%">Med</th><th width="5%">Avg-90%</th><th width="5%">Std Dev</th>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 146.148.19.39/Controller Connection/Ping Duration (ms)</span></td><td class="line2right bordered">23</td><td class="line2right bordered">23.8</td><td class="line2right bordered">25</td><td class="line2right bordered">24</td><td class="line2right bordered">23.8</td><td class="line2right bordered">0.649</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 146.148.19.39/Network/Segments sent/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">8.21</td><td class="line1right bordered">86.2</td><td class="line1right bordered">5.01</td><td class="line1right bordered">7.33</td><td class="line1right bordered">5.95</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 146.148.19.39/Network/Segments retransmitted/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">1.61</td><td class="line2right bordered">7.01</td><td class="line2right bordered">1</td><td class="line2right bordered">1.48</td><td class="line2right bordered">1.45</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 146.148.19.39/Network/eth0 (eth0)/Megabits received/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0.003</td><td class="line1right bordered">0.057</td><td class="line1right bordered">0.002</td><td class="line1right bordered">0.002</td><td class="line1right bordered">0.007</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 146.148.19.39/Network/eth0 (eth0)/Megabits sent/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0.018</td><td class="line2right bordered">0.236</td><td class="line2right bordered">0.015</td><td class="line2right bordered">0.017</td><td class="line2right bordered">0.013</td>
+</tr>
+</table>
+</div>
+</div>
+<p class="mediumtitle">LG 159.8.70.118</p>
+<div style="width: 100%; height: 20px;" id="report.monitors">
+<div style="float:left" class="h1" id="statistics_summary_title">Performance Counters</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="monitors_template">
+<th width="36%"></th><th width="5%">Min</th><th width="5%">Avg</th><th width="5%">Max</th><th width="5%">Med</th><th width="5%">Avg-90%</th><th width="5%">Std Dev</th>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 159.8.70.118/CPU Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">1.51</td><td class="line2right bordered">50</td><td class="line2right bordered">1</td><td class="line2right bordered">1.02</td><td class="line2right bordered">3.46</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 159.8.70.118/Memory Used</span></td><td class="line1right bordered">5</td><td class="line1right bordered">8.17</td><td class="line1right bordered">15</td><td class="line1right bordered">8</td><td class="line1right bordered">8.04</td><td class="line1right bordered">2.33</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 159.8.70.118/Throughput</span></td><td class="line2right bordered">0</td><td class="line2right bordered">2.26</td><td class="line2right bordered">20.3</td><td class="line2right bordered">0.403</td><td class="line2right bordered">1.73</td><td class="line2right bordered">3.8</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 159.8.70.118/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">22.6</td><td class="line1right bordered">29</td><td class="line1right bordered">23</td><td class="line1right bordered">23.1</td><td class="line1right bordered">5.48</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 159.8.70.118/Controller Connection/Ping Duration (ms)</span></td><td class="line2right bordered">21</td><td class="line2right bordered">22.5</td><td class="line2right bordered">24</td><td class="line2right bordered">22</td><td class="line2right bordered">22.5</td><td class="line2right bordered">0.881</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 159.8.70.118/Network/Segments sent/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">214.2</td><td class="line1right bordered">1,144</td><td class="line1right bordered">139.4</td><td class="line1right bordered">192.2</td><td class="line1right bordered">203.5</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 159.8.70.118/Network/Segments retransmitted/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0.298</td><td class="line2right bordered">15</td><td class="line2right bordered">0</td><td class="line2right bordered">0.12</td><td class="line2right bordered">1.19</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 159.8.70.118/Network/eth0 (eth0)/Megabits received/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0.002</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 159.8.70.118/Network/eth0 (eth0)/Megabits sent/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0.001</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 159.8.70.118/Network/eth1 (eth1)/Megabits received/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">2.38</td><td class="line1right bordered">21.1</td><td class="line1right bordered">0.449</td><td class="line1right bordered">1.82</td><td class="line1right bordered">3.95</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 159.8.70.118/Network/eth1 (eth1)/Megabits sent/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0.23</td><td class="line2right bordered">1.13</td><td class="line2right bordered">0.193</td><td class="line2right bordered">0.219</td><td class="line2right bordered">0.156</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 159.8.70.118/MyPopulationSmallCities/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">12.4</td><td class="line1right bordered">13</td><td class="line1right bordered">13</td><td class="line1right bordered">12.8</td><td class="line1right bordered">2.15</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 159.8.70.118/MyPopulationSmallCities/MyiPhoneUser_Create_report/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">5.73</td><td class="line2right bordered">6</td><td class="line2right bordered">6</td><td class="line2right bordered">5.93</td><td class="line2right bordered">0.979</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 159.8.70.118/MyPopulationSmallCities/BrowserUser_Create_report/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">6.67</td><td class="line1right bordered">7</td><td class="line1right bordered">7</td><td class="line1right bordered">6.91</td><td class="line1right bordered">1.18</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 159.8.70.118/MyPopulationBigCities/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">10.24</td><td class="line2right bordered">16</td><td class="line2right bordered">10</td><td class="line2right bordered">10.26</td><td class="line2right bordered">4.26</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 159.8.70.118/MyPopulationBigCities/MyiPhoneUser_Create_report/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">6.12</td><td class="line1right bordered">9</td><td class="line1right bordered">6</td><td class="line1right bordered">6.16</td><td class="line1right bordered">2.51</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 159.8.70.118/MyPopulationBigCities/BrowserUser_Create_report/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">4.12</td><td class="line2right bordered">7</td><td class="line2right bordered">4</td><td class="line2right bordered">4.1</td><td class="line2right bordered">1.76</td>
+</tr>
+</table>
+</div>
+</div>
+<p class="mediumtitle">LG 92.222.66.173</p>
+<div style="width: 100%; height: 20px;" id="report.monitors">
+<div style="float:left" class="h1" id="statistics_summary_title">Performance Counters</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="monitors_template">
+<th width="36%"></th><th width="5%">Min</th><th width="5%">Avg</th><th width="5%">Max</th><th width="5%">Med</th><th width="5%">Avg-90%</th><th width="5%">Std Dev</th>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 92.222.66.173/CPU Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">1.45</td><td class="line2right bordered">51</td><td class="line2right bordered">1</td><td class="line2right bordered">1.09</td><td class="line2right bordered">2.9</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 92.222.66.173/Memory Used</span></td><td class="line1right bordered">6</td><td class="line1right bordered">13.6</td><td class="line1right bordered">25</td><td class="line1right bordered">13</td><td class="line1right bordered">13.5</td><td class="line1right bordered">4.49</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 92.222.66.173/Throughput</span></td><td class="line2right bordered">0</td><td class="line2right bordered">2.66</td><td class="line2right bordered">25.6</td><td class="line2right bordered">0.478</td><td class="line2right bordered">2.17</td><td class="line2right bordered">4</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 92.222.66.173/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">22.6</td><td class="line1right bordered">29</td><td class="line1right bordered">23</td><td class="line1right bordered">23.1</td><td class="line1right bordered">5.47</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 92.222.66.173/Controller Connection/Ping Duration (ms)</span></td><td class="line2right bordered">20</td><td class="line2right bordered">23.4</td><td class="line2right bordered">43</td><td class="line2right bordered">21</td><td class="line2right bordered">22.5</td><td class="line2right bordered">6.74</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 92.222.66.173/Network/Segments sent/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">256.8</td><td class="line1right bordered">1,365</td><td class="line1right bordered">161.8</td><td class="line1right bordered">235.4</td><td class="line1right bordered">229.6</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 92.222.66.173/Network/Segments retransmitted/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0.32</td><td class="line2right bordered">10</td><td class="line2right bordered">0</td><td class="line2right bordered">0.191</td><td class="line2right bordered">0.829</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 92.222.66.173/Network/eth0 (eth0)/Megabits received/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">2.74</td><td class="line1right bordered">25.9</td><td class="line1right bordered">0.542</td><td class="line1right bordered">2.26</td><td class="line1right bordered">4.07</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 92.222.66.173/Network/eth0 (eth0)/Megabits sent/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0.272</td><td class="line2right bordered">0.976</td><td class="line2right bordered">0.229</td><td class="line2right bordered">0.261</td><td class="line2right bordered">0.179</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 92.222.66.173/MyPopulationSmallCities/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">12.4</td><td class="line1right bordered">13</td><td class="line1right bordered">13</td><td class="line1right bordered">12.8</td><td class="line1right bordered">2.14</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 92.222.66.173/MyPopulationSmallCities/MyiPhoneUser_Create_report/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">6.67</td><td class="line2right bordered">7</td><td class="line2right bordered">7</td><td class="line2right bordered">6.91</td><td class="line2right bordered">1.16</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 92.222.66.173/MyPopulationSmallCities/BrowserUser_Create_report/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">5.72</td><td class="line1right bordered">6</td><td class="line1right bordered">6</td><td class="line1right bordered">5.93</td><td class="line1right bordered">0.985</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 92.222.66.173/MyPopulationBigCities/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">10.24</td><td class="line2right bordered">16</td><td class="line2right bordered">10</td><td class="line2right bordered">10.26</td><td class="line2right bordered">4.26</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 92.222.66.173/MyPopulationBigCities/MyiPhoneUser_Create_report/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">4.11</td><td class="line1right bordered">6</td><td class="line1right bordered">4</td><td class="line1right bordered">4.13</td><td class="line1right bordered">1.66</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 92.222.66.173/MyPopulationBigCities/BrowserUser_Create_report/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">6.13</td><td class="line2right bordered">10</td><td class="line2right bordered">6</td><td class="line2right bordered">6.13</td><td class="line2right bordered">2.61</td>
+</tr>
+</table>
+</div>
+</div>
+<p class="mediumtitle">LG 52.28.62.115</p>
+<div style="width: 100%; height: 20px;" id="report.monitors">
+<div style="float:left" class="h1" id="statistics_summary_title">Performance Counters</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="monitors_template">
+<th width="36%"></th><th width="5%">Min</th><th width="5%">Avg</th><th width="5%">Max</th><th width="5%">Med</th><th width="5%">Avg-90%</th><th width="5%">Std Dev</th>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 52.28.62.115/CPU Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">1.2</td><td class="line2right bordered">54</td><td class="line2right bordered">0</td><td class="line2right bordered">0.785</td><td class="line2right bordered">3.49</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 52.28.62.115/Memory Used</span></td><td class="line1right bordered">5</td><td class="line1right bordered">14.7</td><td class="line1right bordered">27</td><td class="line1right bordered">15</td><td class="line1right bordered">14.6</td><td class="line1right bordered">5.43</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 52.28.62.115/Throughput</span></td><td class="line2right bordered">0</td><td class="line2right bordered">2.15</td><td class="line2right bordered">24.3</td><td class="line2right bordered">0.381</td><td class="line2right bordered">1.7</td><td class="line2right bordered">3.54</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 52.28.62.115/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">21.7</td><td class="line1right bordered">28</td><td class="line1right bordered">22</td><td class="line1right bordered">22.1</td><td class="line1right bordered">5.36</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 52.28.62.115/Controller Connection/Ping Duration (ms)</span></td><td class="line2right bordered">41</td><td class="line2right bordered">59.9</td><td class="line2right bordered">297</td><td class="line2right bordered">43</td><td class="line2right bordered">47.7</td><td class="line2right bordered">63.5</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 52.28.62.115/Network/Segments sent/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">199.7</td><td class="line1right bordered">1,386</td><td class="line1right bordered">125</td><td class="line1right bordered">179.3</td><td class="line1right bordered">189.7</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 52.28.62.115/Network/Segments retransmitted/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0.506</td><td class="line2right bordered">8.01</td><td class="line2right bordered">0</td><td class="line2right bordered">0.391</td><td class="line2right bordered">0.864</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 52.28.62.115/Network/eth0 (eth0)/Megabits received/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">2.25</td><td class="line1right bordered">25.3</td><td class="line1right bordered">0.425</td><td class="line1right bordered">1.79</td><td class="line1right bordered">3.68</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 52.28.62.115/Network/eth0 (eth0)/Megabits sent/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0.222</td><td class="line2right bordered">1.09</td><td class="line2right bordered">0.185</td><td class="line2right bordered">0.211</td><td class="line2right bordered">0.151</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 52.28.62.115/MyPopulationSmallCities/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">11.4</td><td class="line1right bordered">12</td><td class="line1right bordered">12</td><td class="line1right bordered">11.9</td><td class="line1right bordered">1.97</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 52.28.62.115/MyPopulationSmallCities/MyiPhoneUser_Create_report/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">5.73</td><td class="line2right bordered">6</td><td class="line2right bordered">6</td><td class="line2right bordered">5.93</td><td class="line2right bordered">0.979</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 52.28.62.115/MyPopulationSmallCities/BrowserUser_Create_report/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">5.72</td><td class="line1right bordered">6</td><td class="line1right bordered">6</td><td class="line1right bordered">5.93</td><td class="line1right bordered">0.99</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 52.28.62.115/MyPopulationBigCities/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">10.24</td><td class="line2right bordered">16</td><td class="line2right bordered">10</td><td class="line2right bordered">10.26</td><td class="line2right bordered">4.26</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 52.28.62.115/MyPopulationBigCities/MyiPhoneUser_Create_report/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">6.18</td><td class="line1right bordered">10</td><td class="line1right bordered">6</td><td class="line1right bordered">6.17</td><td class="line1right bordered">2.59</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 52.28.62.115/MyPopulationBigCities/BrowserUser_Create_report/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">4.06</td><td class="line2right bordered">6</td><td class="line2right bordered">4</td><td class="line2right bordered">4.09</td><td class="line2right bordered">1.68</td>
+</tr>
+</table>
+</div>
+</div>
+<p class="mediumtitle">LG 54.74.241.66</p>
+<div style="width: 100%; height: 20px;" id="report.monitors">
+<div style="float:left" class="h1" id="statistics_summary_title">Performance Counters</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="monitors_template">
+<th width="36%"></th><th width="5%">Min</th><th width="5%">Avg</th><th width="5%">Max</th><th width="5%">Med</th><th width="5%">Avg-90%</th><th width="5%">Std Dev</th>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 54.74.241.66/CPU Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">1.47</td><td class="line2right bordered">58</td><td class="line2right bordered">1</td><td class="line2right bordered">0.975</td><td class="line2right bordered">3.73</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 54.74.241.66/Memory Used</span></td><td class="line1right bordered">5</td><td class="line1right bordered">14.7</td><td class="line1right bordered">28</td><td class="line1right bordered">15</td><td class="line1right bordered">14.6</td><td class="line1right bordered">5.55</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 54.74.241.66/Throughput</span></td><td class="line2right bordered">0</td><td class="line2right bordered">2.59</td><td class="line2right bordered">31.7</td><td class="line2right bordered">0.491</td><td class="line2right bordered">2.04</td><td class="line2right bordered">4.13</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 54.74.241.66/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">22.6</td><td class="line1right bordered">29</td><td class="line1right bordered">23</td><td class="line1right bordered">23.1</td><td class="line1right bordered">5.48</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 54.74.241.66/Controller Connection/Ping Duration (ms)</span></td><td class="line2right bordered">36</td><td class="line2right bordered">40.7</td><td class="line2right bordered">75</td><td class="line2right bordered">37</td><td class="line2right bordered">39</td><td class="line2right bordered">9.37</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 54.74.241.66/Network/Segments sent/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">183.4</td><td class="line1right bordered">899.1</td><td class="line1right bordered">146.9</td><td class="line1right bordered">172.1</td><td class="line1right bordered">132</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 54.74.241.66/Network/Segments retransmitted/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0.216</td><td class="line2right bordered">16.9</td><td class="line2right bordered">0</td><td class="line2right bordered">0.146</td><td class="line2right bordered">0.714</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 54.74.241.66/Network/eth0 (eth0)/Megabits received/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">2.72</td><td class="line1right bordered">32.9</td><td class="line1right bordered">0.544</td><td class="line1right bordered">2.15</td><td class="line1right bordered">4.29</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 54.74.241.66/Network/eth0 (eth0)/Megabits sent/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0.232</td><td class="line2right bordered">1.17</td><td class="line2right bordered">0.2</td><td class="line2right bordered">0.222</td><td class="line2right bordered">0.147</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 54.74.241.66/MyPopulationSmallCities/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">12.4</td><td class="line1right bordered">13</td><td class="line1right bordered">13</td><td class="line1right bordered">12.8</td><td class="line1right bordered">2.15</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 54.74.241.66/MyPopulationSmallCities/MyiPhoneUser_Create_report/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">6.67</td><td class="line2right bordered">7</td><td class="line2right bordered">7</td><td class="line2right bordered">6.91</td><td class="line2right bordered">1.16</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 54.74.241.66/MyPopulationSmallCities/BrowserUser_Create_report/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">5.72</td><td class="line1right bordered">6</td><td class="line1right bordered">6</td><td class="line1right bordered">5.93</td><td class="line1right bordered">0.99</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 54.74.241.66/MyPopulationBigCities/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">10.24</td><td class="line2right bordered">16</td><td class="line2right bordered">10</td><td class="line2right bordered">10.26</td><td class="line2right bordered">4.26</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 54.74.241.66/MyPopulationBigCities/MyiPhoneUser_Create_report/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">4.11</td><td class="line1right bordered">6</td><td class="line1right bordered">4</td><td class="line1right bordered">4.13</td><td class="line1right bordered">1.66</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 54.74.241.66/MyPopulationBigCities/BrowserUser_Create_report/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">6.13</td><td class="line2right bordered">10</td><td class="line2right bordered">6</td><td class="line2right bordered">6.13</td><td class="line2right bordered">2.61</td>
+</tr>
+</table>
+</div>
+</div>
+<p class="mediumtitle">LG 159.122.148.138</p>
+<div style="width: 100%; height: 20px;" id="report.monitors">
+<div style="float:left" class="h1" id="statistics_summary_title">Performance Counters</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="monitors_template">
+<th width="36%"></th><th width="5%">Min</th><th width="5%">Avg</th><th width="5%">Max</th><th width="5%">Med</th><th width="5%">Avg-90%</th><th width="5%">Std Dev</th>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 159.122.148.138/CPU Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">1.77</td><td class="line2right bordered">58</td><td class="line2right bordered">1</td><td class="line2right bordered">1.21</td><td class="line2right bordered">4.21</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 159.122.148.138/Memory Used</span></td><td class="line1right bordered">5</td><td class="line1right bordered">8.58</td><td class="line1right bordered">15</td><td class="line1right bordered">8</td><td class="line1right bordered">8.47</td><td class="line1right bordered">2.34</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 159.122.148.138/Throughput</span></td><td class="line2right bordered">0</td><td class="line2right bordered">2.21</td><td class="line2right bordered">30</td><td class="line2right bordered">0.422</td><td class="line2right bordered">1.76</td><td class="line2right bordered">3.58</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 159.122.148.138/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">22.6</td><td class="line1right bordered">29</td><td class="line1right bordered">23</td><td class="line1right bordered">23.1</td><td class="line1right bordered">5.48</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 159.122.148.138/Controller Connection/Ping Duration (ms)</span></td><td class="line2right bordered">49</td><td class="line2right bordered">368.5</td><td class="line2right bordered">4,035</td><td class="line2right bordered">51</td><td class="line2right bordered">179.7</td><td class="line2right bordered">1,002</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 159.122.148.138/Network/Segments sent/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">209.8</td><td class="line1right bordered">1,432</td><td class="line1right bordered">144.9</td><td class="line1right bordered">190.6</td><td class="line1right bordered">186.9</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 159.122.148.138/Network/Segments retransmitted/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0.786</td><td class="line2right bordered">14</td><td class="line2right bordered">0</td><td class="line2right bordered">0.571</td><td class="line2right bordered">1.42</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 159.122.148.138/Network/eth0 (eth0)/Megabits received/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0.004</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0.001</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 159.122.148.138/Network/eth0 (eth0)/Megabits sent/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0.001</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 159.122.148.138/Network/eth1 (eth1)/Megabits received/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">2.32</td><td class="line1right bordered">31.1</td><td class="line1right bordered">0.467</td><td class="line1right bordered">1.85</td><td class="line1right bordered">3.71</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 159.122.148.138/Network/eth1 (eth1)/Megabits sent/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0.229</td><td class="line2right bordered">1.03</td><td class="line2right bordered">0.206</td><td class="line2right bordered">0.219</td><td class="line2right bordered">0.149</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 159.122.148.138/MyPopulationSmallCities/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">12.4</td><td class="line1right bordered">13</td><td class="line1right bordered">13</td><td class="line1right bordered">12.8</td><td class="line1right bordered">2.15</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 159.122.148.138/MyPopulationSmallCities/MyiPhoneUser_Create_report/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">5.73</td><td class="line2right bordered">6</td><td class="line2right bordered">6</td><td class="line2right bordered">5.93</td><td class="line2right bordered">0.979</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 159.122.148.138/MyPopulationSmallCities/BrowserUser_Create_report/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">6.67</td><td class="line1right bordered">7</td><td class="line1right bordered">7</td><td class="line1right bordered">6.91</td><td class="line1right bordered">1.18</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 159.122.148.138/MyPopulationBigCities/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">10.24</td><td class="line2right bordered">16</td><td class="line2right bordered">10</td><td class="line2right bordered">10.26</td><td class="line2right bordered">4.26</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 159.122.148.138/MyPopulationBigCities/MyiPhoneUser_Create_report/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">6.18</td><td class="line1right bordered">10</td><td class="line1right bordered">6</td><td class="line1right bordered">6.17</td><td class="line1right bordered">2.59</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 159.122.148.138/MyPopulationBigCities/BrowserUser_Create_report/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">4.06</td><td class="line2right bordered">6</td><td class="line2right bordered">4</td><td class="line2right bordered">4.09</td><td class="line2right bordered">1.68</td>
+</tr>
+</table>
+</div>
+</div>
+<p class="mediumtitle">LG 40.114.248.10</p>
+<div style="width: 100%; height: 20px;" id="report.monitors">
+<div style="float:left" class="h1" id="statistics_summary_title">Performance Counters</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="monitors_template">
+<th width="36%"></th><th width="5%">Min</th><th width="5%">Avg</th><th width="5%">Max</th><th width="5%">Med</th><th width="5%">Avg-90%</th><th width="5%">Std Dev</th>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 40.114.248.10/CPU Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">1.93</td><td class="line2right bordered">89</td><td class="line2right bordered">1</td><td class="line2right bordered">1.39</td><td class="line2right bordered">4.29</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 40.114.248.10/Memory Used</span></td><td class="line1right bordered">6</td><td class="line1right bordered">11.2</td><td class="line1right bordered">18</td><td class="line1right bordered">11</td><td class="line1right bordered">11.1</td><td class="line1right bordered">3.18</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 40.114.248.10/Throughput</span></td><td class="line2right bordered">0</td><td class="line2right bordered">2.09</td><td class="line2right bordered">17.5</td><td class="line2right bordered">0.4</td><td class="line2right bordered">1.71</td><td class="line2right bordered">3.33</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 40.114.248.10/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">21.7</td><td class="line1right bordered">28</td><td class="line1right bordered">22</td><td class="line1right bordered">22.1</td><td class="line1right bordered">5.35</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 40.114.248.10/Controller Connection/Ping Duration (ms)</span></td><td class="line2right bordered">30</td><td class="line2right bordered">304.3</td><td class="line2right bordered">4,077</td><td class="line2right bordered">32</td><td class="line2right bordered">107</td><td class="line2right bordered">1,013</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 40.114.248.10/Network/Segments sent/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">214.9</td><td class="line1right bordered">1,308</td><td class="line1right bordered">138.1</td><td class="line1right bordered">194.9</td><td class="line1right bordered">202.4</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 40.114.248.10/Network/Segments retransmitted/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0.328</td><td class="line2right bordered">9.04</td><td class="line2right bordered">0</td><td class="line2right bordered">0.198</td><td class="line2right bordered">0.824</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 40.114.248.10/Network/eth0 (eth0)/Megabits received/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">2.22</td><td class="line1right bordered">18.5</td><td class="line1right bordered">0.45</td><td class="line1right bordered">1.83</td><td class="line1right bordered">3.5</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 40.114.248.10/Network/eth0 (eth0)/Megabits sent/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0.225</td><td class="line2right bordered">1.05</td><td class="line2right bordered">0.184</td><td class="line2right bordered">0.214</td><td class="line2right bordered">0.155</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 40.114.248.10/MyPopulationSmallCities/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">11.5</td><td class="line1right bordered">12</td><td class="line1right bordered">12</td><td class="line1right bordered">11.9</td><td class="line1right bordered">1.96</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 40.114.248.10/MyPopulationSmallCities/MyiPhoneUser_Create_report/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">5.73</td><td class="line2right bordered">6</td><td class="line2right bordered">6</td><td class="line2right bordered">5.93</td><td class="line2right bordered">0.979</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 40.114.248.10/MyPopulationSmallCities/BrowserUser_Create_report/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">5.72</td><td class="line1right bordered">6</td><td class="line1right bordered">6</td><td class="line1right bordered">5.93</td><td class="line1right bordered">0.985</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 40.114.248.10/MyPopulationBigCities/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">10.24</td><td class="line2right bordered">16</td><td class="line2right bordered">10</td><td class="line2right bordered">10.26</td><td class="line2right bordered">4.26</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 40.114.248.10/MyPopulationBigCities/MyiPhoneUser_Create_report/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">6.18</td><td class="line1right bordered">10</td><td class="line1right bordered">6</td><td class="line1right bordered">6.17</td><td class="line1right bordered">2.59</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 40.114.248.10/MyPopulationBigCities/BrowserUser_Create_report/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">4.06</td><td class="line2right bordered">6</td><td class="line2right bordered">4</td><td class="line2right bordered">4.09</td><td class="line2right bordered">1.68</td>
+</tr>
+</table>
+</div>
+</div>
+<p class="mediumtitle">LG 134.213.210.222</p>
+<div style="width: 100%; height: 20px;" id="report.monitors">
+<div style="float:left" class="h1" id="statistics_summary_title">Performance Counters</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="monitors_template">
+<th width="36%"></th><th width="5%">Min</th><th width="5%">Avg</th><th width="5%">Max</th><th width="5%">Med</th><th width="5%">Avg-90%</th><th width="5%">Std Dev</th>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 134.213.210.222/CPU Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">2.37</td><td class="line2right bordered">58</td><td class="line2right bordered">1</td><td class="line2right bordered">1.85</td><td class="line2right bordered">3.96</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 134.213.210.222/Memory Used</span></td><td class="line1right bordered">5</td><td class="line1right bordered">8.01</td><td class="line1right bordered">14</td><td class="line1right bordered">8</td><td class="line1right bordered">7.9</td><td class="line1right bordered">2.16</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 134.213.210.222/Throughput</span></td><td class="line2right bordered">0</td><td class="line2right bordered">2.16</td><td class="line2right bordered">17.6</td><td class="line2right bordered">0.431</td><td class="line2right bordered">1.77</td><td class="line2right bordered">3.37</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 134.213.210.222/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">21.7</td><td class="line1right bordered">28</td><td class="line1right bordered">22</td><td class="line1right bordered">22.1</td><td class="line1right bordered">5.36</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 134.213.210.222/Controller Connection/Ping Duration (ms)</span></td><td class="line2right bordered">28</td><td class="line2right bordered">429.1</td><td class="line2right bordered">5,967</td><td class="line2right bordered">29</td><td class="line2right bordered">140.1</td><td class="line2right bordered">1,485</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 134.213.210.222/Network/Segments sent/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">198.9</td><td class="line1right bordered">1,030</td><td class="line1right bordered">144</td><td class="line1right bordered">183.5</td><td class="line1right bordered">162.9</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 134.213.210.222/Network/Segments retransmitted/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0.351</td><td class="line2right bordered">8.99</td><td class="line2right bordered">0</td><td class="line2right bordered">0.203</td><td class="line2right bordered">0.948</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 134.213.210.222/Network/eth0 (eth0)/Megabits received/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">2.22</td><td class="line1right bordered">17.9</td><td class="line1right bordered">0.468</td><td class="line1right bordered">1.82</td><td class="line1right bordered">3.42</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 134.213.210.222/Network/eth0 (eth0)/Megabits sent/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0.222</td><td class="line2right bordered">0.886</td><td class="line2right bordered">0.185</td><td class="line2right bordered">0.213</td><td class="line2right bordered">0.139</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 134.213.210.222/Network/eth1 (eth1)/Megabits received/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 134.213.210.222/Network/eth1 (eth1)/Megabits sent/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 134.213.210.222/MyPopulationSmallCities/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">11.4</td><td class="line1right bordered">12</td><td class="line1right bordered">12</td><td class="line1right bordered">11.9</td><td class="line1right bordered">1.97</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 134.213.210.222/MyPopulationSmallCities/MyiPhoneUser_Create_report/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">5.73</td><td class="line2right bordered">6</td><td class="line2right bordered">6</td><td class="line2right bordered">5.93</td><td class="line2right bordered">0.979</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 134.213.210.222/MyPopulationSmallCities/BrowserUser_Create_report/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">5.72</td><td class="line1right bordered">6</td><td class="line1right bordered">6</td><td class="line1right bordered">5.93</td><td class="line1right bordered">0.99</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 134.213.210.222/MyPopulationBigCities/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">10.24</td><td class="line2right bordered">16</td><td class="line2right bordered">10</td><td class="line2right bordered">10.26</td><td class="line2right bordered">4.26</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG 134.213.210.222/MyPopulationBigCities/MyiPhoneUser_Create_report/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">6.18</td><td class="line1right bordered">10</td><td class="line1right bordered">6</td><td class="line1right bordered">6.17</td><td class="line1right bordered">2.59</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG 134.213.210.222/MyPopulationBigCities/BrowserUser_Create_report/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">4.06</td><td class="line2right bordered">6</td><td class="line2right bordered">4</td><td class="line2right bordered">4.09</td><td class="line2right bordered">1.68</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

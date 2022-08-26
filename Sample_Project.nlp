@@ -1,0 +1,16 @@
+# Project description file
+
+project.name=Sample_Project
+project.config.storage=ZIP
+project.id=214d2ef8-c9e1-4ff4-83a5-a0e989eb24bd
+product.version=8.2.1
+team.server.enabled=false
+product.original.name=
+product.name=NeoLoad
+product.original.version=
+project.config.path=config.zip
+project.version=8.4
+project.original.version=4.2
+project.is-open-test-settings-after-upload=true
+project.workspace=5e3acde2e860a132744ca916
+project.test-settings=3ed1919d-799b-4549-bcb8-c1ba3fb303af
